@@ -4,9 +4,6 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script>$('.close').click(function(){
-   $(this).parent().parent().remove();
-});</script>
 
 <div class="container">
   <!-- Modal -->
@@ -19,6 +16,13 @@
           <h4 style="color:white;" class="modal-title">Sale: [ITEM BUNDLE]</h4>
         </div>
         <div class="modal-body">
+                      <style>
+            .picHotpot {
+              width: 200px;
+              height: 121px;
+            }
+            </style>
+            <img src="{{url_for('static', filename='soup.jpg')}}" align="middle" class='picHotpot'/>
           <p>Welcome to {{site_info.store_name}}! We currently are running a sale on {{site_info.bundle_name}}.</p>
             <p>{{site_info.bundle_description}}</p>
             <form action="#" method="post">
