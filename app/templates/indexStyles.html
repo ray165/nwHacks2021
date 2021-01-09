@@ -19,7 +19,8 @@
           <h4 style="color:white;" class="modal-title">Sale: [ITEM BUNDLE]</h4>
         </div>
         <div class="modal-body">
-          <p>Welcome to {{title}}! We currently are running a sale on [ITEM BUNDLE].</p>
+          <p>Welcome to {{site_info.store_name}}! We currently are running a sale on {{site_info.bundle_name}}.</p>
+            <p>{{site_info.bundle_description}}</p>
             <form action="#" method="post">
               <label for="quantity">Quantity:</label>
                 <select id="quantity" name="quantity">
