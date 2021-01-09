@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      {% if title %}
+      <title>{{ title }} - Kylf's Blog</title>
+      {% else %}
+      <title>Welcome to Kylfblog</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>[GROCERY STORE NAME]: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
