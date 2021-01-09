@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<div class="container">
+  <!-- Modal -->
+  <div style="position:fixed; left:500px; top:400px;" class="modal show" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div style="background-color:#dd9933;" class="modal-header">
+          <h4 style="color:white;" class="modal-title">Sale: [ITEM BUNDLE]</h4>
+        </div>
+        <div class="modal-body">
+          <p>Welcome to {{title}}! We currently are running a sale on [ITEM BUNDLE].</p>
+            <form action="#" method="post">
+              <label for="quantity">Quantity:</label>
+                <select id="quantity" name="quantity">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+                <!-- Delete this since we already have Add to Cart
+                <input type="submit" value="Add to Cart">
+                -->
+                <p>Total Price: <input type="number" name="result_dc" value="{{ result }}"></p>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button style="background-color:#f6121c; color:white;" type="button" class="btn btn-default" data-dismiss="modal">Add to Cart</button>
+            <button style="background-color:#f6121c; color:white;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>var queryString = $('#quantity').serialize();
+  console.log(queryString)</script>
+</div>
+{% endblock %}
