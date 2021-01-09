@@ -4,10 +4,11 @@ from app import app
 @app.route('/', methods=['POST', 'GET'])
 @app.route('/index', methods=['POST', 'GET'])
 def index():
+    itemPrice = 420
     user = {'username': 'Kyle'}
     if request.method == 'POST':
         result = float(request.form['quantity'])
     else:
         result = 0
 
-    return render_template('index.html', user=user, result=result)
+    return render_template('index.html', user=user, result=result*itemPrice)
