@@ -2,14 +2,19 @@ from flask import render_template, request
 from app import app
 
 total_cart_value = 0
+init = False
 @app.route('/', methods=['POST', 'GET'])
 @app.route('/index', methods=['POST', 'GET'])
 def index():
     global total_cart_value
+    global init
     itemPrice = 5
     if request.method == 'POST':
-        result = int(request.form['quantity'])
-        total_cart_value += result
+        print(request)
+        data = int(request.form['quantity'])
+        if init == True:
+            total_cart_value += data
+        init = True
     else:
         result = 0
 
