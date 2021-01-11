@@ -1,4 +1,5 @@
 ## Intro:
+Python, Flask, HTML, CSS, Bootstrap
 
 Covid 2020 has demonstrated that many small businesses do not have an equal opportunity to conduct online sales like big businesses. In Canada, approximately 225,000 businesses closed.
 
@@ -15,11 +16,11 @@ Lastly, it increases sales in a pandemic world that requires social distancing
 
 ## Further work:
 
-While we were able to accomplish a prototype of our webapp during the timeline of the hackathon, these are things we would implement if we were to grow this project. 
-We would connect the webapp directly to a payment portal
-We would allow the transaction to ping the business owner on a sale 
-We would create a Control Panel/ Settings so the business could easily change the product description/ images/ prices/ 
-We would increase usability to different web platforms. For example, businesses would be able to use the app on wordpress, javascript websites and so on. We would aim to find a method to add this webapp as a plugin that could be used by various platforms.
+While we were able to accomplish a prototype of our webapp during the timeline of the hackathon, these are things we would implement if we were to grow this project.   
+- We would connect the webapp directly to a payment portal  
+- We would allow the transaction to ping the business owner on a sale   
+- We would create a Control Panel/ Settings so the business could easily change the product description/ images/ prices/   
+- We would increase usability to different web platforms. For example, businesses would be able to use the app on wordpress, javascript websites and so on. We would aim to find a method to add this webapp as a plugin that could be used by various platforms.  
 
 Conclusion:
 In summary, we would aim with this webapp to help small businesses increase their sales and adapt to an online world. Thank you for listening to our presentation! We hope to see you around the hackathon.
