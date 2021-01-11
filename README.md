@@ -9,6 +9,10 @@ First it helps customers buy products instantly. By offering a bundle we can pot
 Secondly, it gives businesses that don’t have a complete online inventory the opportunity to sell online 
 Lastly, it increases sales in a pandemic world that requires social distancing 
 
+![image of the webapp](https://github.com/ray165/nwHacks2021/blob/master/asianGroceryStoreImage.png?raw=true)
+
+
+
 ## Further work:
 
 While we were able to accomplish a prototype of our webapp during the timeline of the hackathon, these are things we would implement if we were to grow this project. 
